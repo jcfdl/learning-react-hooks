@@ -11,6 +11,10 @@ function HookMouse() {
 
     useEffect(() => {
         window.addEventListener('mousemove', logMousePosition)
+
+        return () => {
+            window.removeEventListener('mousemove', logMousePosition)
+        }
     }, []) //add empty array to run only once
 
     return (
