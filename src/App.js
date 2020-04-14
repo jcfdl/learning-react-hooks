@@ -22,6 +22,12 @@ import DataFetchingOne from './components/DataFetchingOne';
 import DataFetchingTwo from './components/DataFetchingTwo';
 import ParentComponent from './components/ParentComponent';
 import HookMemoCounter from './components/HookMemoCounter';
+import FocusInput from './components/FocusInput';
+import IntervalRef from './components/IntervalRef';
+import DocTitleOne from './components/DocTitleOne';
+import DocTitleTwo from './components/DocTitleTwo';
+import CounterHookOne from './components/CounterHookOne';
+import InputHook from './components/InputHook';
 
 export const UserContext = React.createContext()
 export const ChanelContext = React.createContext()
@@ -46,7 +52,13 @@ function App() {
   const [count, dispatch] = useReducer(reducer, initialState)
   return (
     <div className="App">
-      <HookMemoCounter />
+      <InputHook />
+      {/* <CounterHookOne /> */}
+      {/* <DocTitleOne />
+      <DocTitleTwo /> */}
+      {/* <IntervalRef /> */}
+      {/* <FocusInput /> */}
+      {/* <HookMemoCounter /> */}
       {/* <ParentComponent /> */}
       {/* <DataFetchingTwo /> */}
       {/* <DataFetchingOne /> */}
