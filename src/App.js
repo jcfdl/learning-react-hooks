@@ -20,6 +20,8 @@ import CounterThree from './components/CounterThree';
 import ComponentOne from './components/ComponentOne';
 import DataFetchingOne from './components/DataFetchingOne';
 import DataFetchingTwo from './components/DataFetchingTwo';
+import ParentComponent from './components/ParentComponent';
+import HookMemoCounter from './components/HookMemoCounter';
 
 export const UserContext = React.createContext()
 export const ChanelContext = React.createContext()
@@ -44,7 +46,9 @@ function App() {
   const [count, dispatch] = useReducer(reducer, initialState)
   return (
     <div className="App">
-      <DataFetchingTwo />
+      <HookMemoCounter />
+      {/* <ParentComponent /> */}
+      {/* <DataFetchingTwo /> */}
       {/* <DataFetchingOne /> */}
       {/* <CountContext.Provider value={{countState: count, countDispatch: dispatch}}>
         Count - {count}
